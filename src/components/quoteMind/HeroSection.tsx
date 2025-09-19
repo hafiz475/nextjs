@@ -4,7 +4,6 @@ import React from 'react';
 import Image from 'next/image';
 import Button from '../Button';
 import { HeroBg, HeroBg1Icon, HeroBg2Icon, HeroBg3Icon, HeroBg4Icon } from '../icons/quotemindAI';
-// import HeroImgBg from '../assets/quoteMindImg/HeroImgBg.png';
 import HeroImgBg from '../assets/quotoMindImg/HeroImgBg.png'
 
 const HeroSection: React.FC = () => {
@@ -19,7 +18,7 @@ const HeroSection: React.FC = () => {
       <div className="mt-6 flex flex-wrap justify-center gap-4">
         <Button>Request a Demo</Button>
         <Button
-          className="bg-transparent border-2 border-[var(--accent-bg)] text-[var(--accent-bg)]! hover:bg-[var(--accent-bg)] hover:text-white"
+          className="bg-transparent border-2 border-[var(--accent-bg)] text-[var(--accent-bg)]! hover:scale-105 hover:shadow-md"
         >
           Learn More
         </Button>
@@ -34,11 +33,11 @@ const HeroSection: React.FC = () => {
           priority
         />
         <HeroBg className="absolute inset-0 w-full h-full object-contain scale-110 -z-5" />
-        {/* Icons Overlay */}
-        <HeroBg1Icon className="absolute -top-4 -left-18 w-16 h-16 md:w-32 md:h-32 flex-shrink-0 z-10" />
-        <HeroBg2Icon className="absolute -top-22 left-[64px] md:left-[128px] w-12 h-12 md:w-24 md:h-24 flex-shrink-0 z-10" />
-        <HeroBg3Icon className="absolute -top-24 right-[64px] md:right-[128px] w-12 h-12 md:w-24 md:h-24 flex-shrink-0 z-10" />
-        <HeroBg4Icon className="absolute top-0 -right-22 w-16 h-16 md:w-32 md:h-32 flex-shrink-0 z-10" />
+        {/* Icons Overlay with Animations */}
+        <HeroBg1Icon className="absolute -top-4 -left-18 w-16 h-16 md:w-32 md:h-32 flex-shrink-0 z-10 animate-float" />
+        <HeroBg2Icon className="absolute -top-22 left-[64px] md:left-[128px] w-12 h-12 md:w-24 md:h-24 flex-shrink-0 z-10 animate-pulse" />
+        <HeroBg3Icon className="absolute -top-24 right-[64px] md:right-[128px] w-12 h-12 md:w-24 md:h-24 flex-shrink-0 z-10 animate-rotate" />
+        <HeroBg4Icon className="absolute top-0 -right-22 w-16 h-16 md:w-32 md:h-32 flex-shrink-0 z-10 animate-bounce" />
       </div>
     </section>
   );

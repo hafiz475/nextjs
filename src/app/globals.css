@@ -2,27 +2,115 @@
 @import "tailwindcss";
 
 :root {
-  /* Theme colors */
-  --background: #EBF7F5; /* Light teal background */
+  --background: #EBF7F5;
   --foreground: #171717;
-  /* Custom background colors */
-  --primary-bg: #1a73e8; /* Blue */
-  --secondary-bg: #f4f4f9; /* Light Gray */
-  --accent-bg: #FF2E53; /* Bright red */
-  --dark-bg: #333333; /* Dark Gray */
-  --success-bg: #34c759; /* Green */
-  /* Navigation text color */
+  --primary-bg: #1a73e8;
+  --secondary-bg: #f4f4f9;
+  --accent-bg: #FF2E53;
+  --dark-bg: #333333;
+  --success-bg: #34c759;
   --nav-text: #181C31;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-poppins); /* Use Poppins from layout.tsx */
+  --font-sans: var(--font-poppins);
 }
 
 body {
-  background: var(--background); /* Applies #EBF7F5 globally */
+  background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans); /* Applies Poppins globally */
+  font-family: var(--font-sans);
+}
+
+/* Custom Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes rotate {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-rotate {
+  animation: rotate 2.5s ease-in-out infinite;
+}
+
+.animate-bounce {
+  animation: bounce 2s ease-in-out infinite;
+}
+
+@media (min-width: 768px) {
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes rotate {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(7deg);
+    }
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
 }
