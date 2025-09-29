@@ -1,11 +1,12 @@
 // app/page.tsx
-import HeroSection from '@/components/quoteMind/HeroSection';
+import SectionOne from '@/components/quoteMind/Section1';
+import SectionTwo from '@/components/quoteMind/Section2';
 
 export default function Home() {
   return (
     <main className="py-8">
-      <HeroSection />
-      {/* Placeholder for other 7 sections */}
+      <SectionOne />
+      <SectionTwo />
     </main>
   );
 }

@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Button from './Button';
-import { LogoIcon } from './icons/quotemindAI'; // Assuming LogoIcon is defined
+import { LogoIcon } from './quoteMind/Section1/Icons'; // Assuming LogoIcon is defined
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
