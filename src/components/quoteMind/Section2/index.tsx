@@ -49,17 +49,17 @@ const SectionTwo: React.FC = () => {
       <h2 className="text-start text-[28px] md:text-[32px] lg:text-[48px] font-semibold text-gray-900 leading-[48px] lg:leading-[72px]">
         Identifying the Gaps; Delivering the Fix
       </h2>
-      <p className="text-start text-[14px] md:text-[16px] lg:text-[20px] font-normal text-gray-600 leading-[32px] mb-8">
+      <p className="text-start text-[14px] md:text-[16px] lg:text-[20px] font-normal text-gray-600 leading-[32px] mb-8 mt-2">
         We analyzed the quoting challenges—from manual inefficiencies to pricing inconsistencies—and built a smart, scalable solution that replaces complexity with clarity.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
         {cards.map((card, index) => (
-          <div key={index} className="border border-[#CBCACA] p-4 rounded-lg flex flex-row items-center">
+          <div key={index} className="border border-[#CBCACA] p-6 rounded-lg flex flex-row items-center">
             <div className="flex-1 text-start">
               <h3 className="text-[24px] md:text-[28px] lg:text-[28px] font-medium text-gray-900 leading-[36px] md:leading-[40px] lg:leading-[36px]">
                 {card.header}
               </h3>
-              <p className="text-[16px] md:text-[16px] lg:text-[16px] font-normal text-gray-600 leading-[24px]">
+              <p className="text-[16px] md:text-[16px] lg:text-[16px] font-normal text-gray-600 leading-[24px] mt-4">
                 {card.description}
               </p>
             </div>
