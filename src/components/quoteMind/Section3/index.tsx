@@ -10,6 +10,7 @@ import {
   AuditReadyERPVisibility,
   ScalableArchitectIcon
 } from './Icons';
+import FinalQuote from './FinalQuote';
 
 const SectionThree: React.FC = () => {
   const cards = [
@@ -76,6 +77,9 @@ const SectionThree: React.FC = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="mt-32">
+        <FinalQuote />
       </div>
     </section>
   );
