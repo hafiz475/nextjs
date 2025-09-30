@@ -7,7 +7,10 @@ import {
   InconsistentPricingModelsIcon, 
   NoRealTimeInsightsIcon, 
   LowRFQHandlingCapacityIcon, 
-  NoSmartMaterialSelectionIcon 
+  NoSmartMaterialSelectionIcon,
+  BgBookIcon,
+  BgSeparatorIcon,
+  BgAiIcon
 } from './Icons';
 
 const SectionTwo: React.FC = () => {
@@ -70,6 +73,11 @@ const SectionTwo: React.FC = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="flex justify-center items-center md:flex px-16 md:px-8 hidden md:block relative md:bottom-16 lg:bottom-0">
+        <BgBookIcon className='relative left-8'/>
+        <BgSeparatorIcon className='relative right-12 bottom-8'/>
+        <BgAiIcon className='relative right-4 bottom-2'/>
       </div>
     </section>
   );
